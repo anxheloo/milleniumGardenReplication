@@ -11,7 +11,7 @@ const WhoWeAre = () => {
       </div>
 
       <div className="flex flex-1 justify-evenly items-end ">
-        <div className="hidden md:block h-[100px] border-r-[0.5px] border-gray-400 bg-white opacity-60 rotate-12"></div>
+        <div className="hidden md:block h-[100px] border-r-[0.5px] border-solid border-gray-400 bg-white opacity-60 rotate-12"></div>
 
         <div className="flex flex-row gap-6 md:flex-col lg:gap-0 items-center">
           <h1 className=" text-[55px] lg:text-[72px] font-[500] text-[#8b7c2a]">
@@ -20,7 +20,7 @@ const WhoWeAre = () => {
           <p className="text-white text-sm">Successful Projects</p>
         </div>
 
-        <div className="hidden md:block h-[100px] border-r-[0.5px] border-gray-400 bg-white opacity-60 rotate-12"></div>
+        <div className="hidden md:block h-[100px] border-r-[0.5px] border-solid border-gray-400 bg-white opacity-60 rotate-12"></div>
       </div>
 
       <div className="flex flex-row gap-6 md:flex-col lg:gap-0 items-center">
