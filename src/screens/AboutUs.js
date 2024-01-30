@@ -21,6 +21,9 @@ import WhoWeAre from "../components/WhoWeAre";
 import folieVillageAboutUs from "../assets/folieVillageAboutUs.jpg";
 import WhoWeAreText from "../components/WhoWeAreText";
 import { WhatWeDoComponent } from "../components/WhatWeDoComponent";
+import { Form } from "../components/Form";
+import { Carousel } from "../components/Carousel";
+import Footer from "../components/Footer";
 
 export const AboutUs = () => {
   return (
@@ -102,10 +105,7 @@ export const AboutUs = () => {
         ></WhatWeDoComponent>
       </section>
 
-      <section
-        id="contactUs"
-        className="h-screen bg-[#151515] p-[20px] md:p-20"
-      >
+      <section id="contactUs" className=" bg-[#151515] p-[20px] md:p-20">
         <div>
           <div
             style={{ backgroundImage: `url(${fullCoverAboutUs})` }}
@@ -123,38 +123,15 @@ export const AboutUs = () => {
           </div>
         </div>
 
-        <div className="flex  justify-center space-x-8 items-end py-20">
-          <form className="w-2/5  flex flex-col gap-4">
-            <div className="flex gap-4">
-              <input
-                type="text"
-                placeholder="FULL NAME"
-                className="border border-gray-400 bg-transparent outline-none w-1/2 px-5 py-4  caret-white"
-              ></input>
-              <input
-                type="email"
-                placeholder="EMAIL"
-                className="border border-gray-400 bg-transparent outline-none w-1/2 px-5 py-4 caret-white"
-              ></input>
-            </div>
-            <div>
-              <textarea
-                placeholder="MESSAGE"
-                className="border border-gray-400 bg-transparent outline-none w-full px-5 py-6 caret-white"
-              ></textarea>
-            </div>
-          </form>
-
-          <div className="mb-2">
-            <button className="bg-[#8b7c2a] rounded-md w-fit h-fit">
-              <FontAwesomeIcon
-                icon={faArrowRight}
-                className="text-white text-[40px] -rotate-45 px-4 py-3 "
-              ></FontAwesomeIcon>
-            </button>
-          </div>
-        </div>
+        <Form></Form>
       </section>
+
+      <section id="gallery" className="bg-[#151515] overflow-hidden">
+        <div className="text-white text-[28px] text-center py-7">GALLERY</div>
+        <Carousel></Carousel>
+      </section>
+
+      <Footer></Footer>
     </div>
   );
 };
