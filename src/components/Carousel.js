@@ -9,36 +9,40 @@ import borsh from "../assets/borsh@2x-1-910x1024.jpg";
 import ksamil from "../assets/ksamil@2x-910x1024.jpg";
 import folieVillage from "../assets/folievillage@2x-910x1024.jpg";
 
-export const Carousel = () => {
+export const Carousel = ({ text }) => {
   const data = [
+    { id: 0, img: food },
+    { id: 1, img: table },
     {
-      img: food,
-    },
-    {
-      img: table,
-    },
-    {
+      id: 2,
       img: seaTable,
     },
     {
+      id: 3,
       img: borsh,
     },
     {
+      id: 4,
       img: ksamil,
     },
     {
+      id: 5,
       img: folieVillage,
     },
     {
+      id: 6,
       img: seaTable,
     },
     {
+      id: 7,
       img: borsh,
     },
     {
+      id: 8,
       img: ksamil,
     },
     {
+      id: 9,
       img: folieVillage,
     },
   ];
@@ -91,22 +95,28 @@ export const Carousel = () => {
   };
 
   return (
-    <div className="w-full m-auto">
-      <Slider {...settings}>
-        {/* <div className=" flex"> */}
-        {data.map((item) => (
-          <div className="w-1/2 h-[250px] md:w-1/3 md:h-[300px] xl:h-[400px]  bg-white ">
-            <img
-              src={item.img}
-              alt="img"
-              className="w-full h-full 2xl:w-[400px] 2xl:h-[420px] object-cover"
+    <section id="gallery" className="bg-[#151515] overflow-hidden">
+      <div className="text-white text-[28px] text-center py-7">{text}</div>
+      <div className="w-full m-auto">
+        <Slider {...settings}>
+          {/* <div className=" flex"> */}
+          {data.map((item) => (
+            <div
+              key={item.id}
+              className="w-1/2 h-[250px] md:w-1/3 md:h-[300px] xl:h-[400px]  bg-white "
+            >
+              <img
+                src={item.img}
+                alt="img"
+                className="w-full h-full 2xl:w-[400px] 2xl:h-[420px] object-cover"
 
-              //   w-full h-full
-            ></img>
-          </div>
-        ))}
-        {/* </div> */}
-      </Slider>
-    </div>
+                //   w-full h-full
+              ></img>
+            </div>
+          ))}
+          {/* </div> */}
+        </Slider>
+      </div>
+    </section>
   );
 };

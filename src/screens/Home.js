@@ -193,9 +193,12 @@ const Home = () => {
         </div>
       </section>
 
-      <StartYourProject></StartYourProject>
-
       <Subscribe></Subscribe>
+
+      <StartYourProject
+        bgColor={"#151515"}
+        textColor={"#FFFFFF"}
+      ></StartYourProject>
 
       <Footer></Footer>
     </div>

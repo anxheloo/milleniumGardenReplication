@@ -2,11 +2,11 @@ import React from "react";
 
 const WhoWeAreText = ({ title, text }) => {
   const formattedText = text.split("\n").map((line) => (
-    <>
+    <div key={line}>
       {line}
       <br />
       <br />
-    </>
+    </div>
   ));
 
   return (

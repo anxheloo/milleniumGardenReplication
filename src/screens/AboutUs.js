@@ -126,10 +126,7 @@ export const AboutUs = () => {
         <Form></Form>
       </section>
 
-      <section id="gallery" className="bg-[#151515] overflow-hidden">
-        <div className="text-white text-[28px] text-center py-7">GALLERY</div>
-        <Carousel></Carousel>
-      </section>
+      <Carousel text={"GALLERY"}></Carousel>
 
       <Footer></Footer>
     </div>
