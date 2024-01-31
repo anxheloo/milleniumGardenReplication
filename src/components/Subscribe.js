@@ -6,9 +6,9 @@ const Subscribe = () => {
   return (
     <section
       id="subscribe"
-      className="h-[350px] lg:h-[400px] flex flex-col justify-around md:items-center px-8 xl:flex-row xl:justify-between  xl:px-32"
+      className="h-[350px] lg:h-[400px] flex flex-col justify-around md:items-center  xl:flex-row xl:justify-between  "
     >
-      <div className="space-y-3  px-8 ">
+      <div className="space-y-3   ">
         <h1 className="text-red-600 text-[16px] font-[500] md:text-[20px]">
           SUBSCRIBE TO OUR NEWSLETTER
         </h1>

@@ -123,7 +123,9 @@ export const AboutUs = () => {
           </div>
         </div>
 
-        <Form></Form>
+        <div className="flex justify-center pt-20 ">
+          <Form></Form>
+        </div>
       </section>
 
       <Carousel text={"GALLERY"}></Carousel>

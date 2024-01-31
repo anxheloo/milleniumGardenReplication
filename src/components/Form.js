@@ -21,9 +21,10 @@ export const Form = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row justify-center space-x-8 items-end pt-20">
-      <form className="w-full lg:4/5 xl:3/5 2xl:w-2/5  flex flex-col gap-4">
-        <div className="flex gap-4">
+    <div className="flex flex-col  md:flex-row space-x-8 items-end  ">
+      <form className="w-full lg:w-[700px] flex flex-col gap-4">
+        {/* lg:4/5 xl:3/5 2xl:w-2/5  */}
+        <div className="flex flex-1 gap-4">
           <input
             type="text"
             placeholder="FULL NAME"
@@ -52,7 +53,8 @@ export const Form = () => {
         <div>
           <textarea
             placeholder="MESSAGE"
-            className="border border-gray-400 bg-transparent outline-none w-full px-5 py-6 caret-white text-white"
+            // w-full
+            className="border border-gray-400 bg-transparent outline-none w-full flex-1 px-5 py-6 caret-white text-white"
             value={values.text}
             onChange={(event) =>
               setValues((prevValues) => ({

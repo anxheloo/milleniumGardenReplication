@@ -47,3 +47,9 @@
   height: 100%;
   clip-path: polygon(0% 0%, 100% 0%, 60% 100%, 40% 100%);
 }
+
+.bg-blur {
+  /* Add the blur effect */
+  filter: blur(5px);
+  -webkit-filter: blur(4px);
+}

@@ -193,7 +193,9 @@ const Home = () => {
         </div>
       </section>
 
-      <Subscribe></Subscribe>
+      <div className="px-8 xl:px-32">
+        <Subscribe></Subscribe>
+      </div>
 
       <StartYourProject
         bgColor={"#151515"}

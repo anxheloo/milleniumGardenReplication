@@ -2,8 +2,8 @@ import React from "react";
 
 const Card = ({ imageSrc, title, url }) => {
   return (
-    <div className="group flex flex-col gap-5 overflow-hidden mb-5">
-      <div className="w-full h-[400px]  xl:w-[420px] xl:h-[320px] 2xl:h-[500px] overflow-hidden">
+    <div className="group flex flex-col gap-5 overflow-hidden mb-5  ">
+      <div className="w-full   md:w-[350px] lg:w-[400px] xl:h-[320px] 2xl:h-[500px] overflow-hidden">
         <a href="#">
           <img
             src={imageSrc}

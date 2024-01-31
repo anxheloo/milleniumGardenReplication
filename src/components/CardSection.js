@@ -9,9 +9,11 @@ export const CardSection = ({
   sectionText,
 }) => {
   return (
-    <section className="bg-white p-[20px]  flex flex-col justify-center items-center  xl:justify-end xl:items-end  lg:min-h-screen xl:p-[10px] ">
-      <div className=" flex flex-col w-full gap-14  2xl:w-[75%] lg:my-12 xl:my-20 overflow-hidden">
-        <div className=" space-y-4">
+    <section className="bg-white p-[20px] flex flex-col justify-center items-center   xl:justify-end xl:items-end  lg:min-h-screen xl:p-[10px] ">
+      {/* <div className="bg-black"> */}
+
+      <div className=" flex flex-col w-full gap-14  2xl:w-fit items-end  lg:my-12 xl:my-20 overflow-hidden ">
+        <div className="w-full space-y-4 ">
           <h1 className="text-[22px]  text-red-600 font-semibold lg:text-[28px]">
             {sectionTitle}
           </h1>
@@ -20,7 +22,7 @@ export const CardSection = ({
           </p>
         </div>
 
-        <div className=" flex flex-col justify-center items-center gap-2 lg:flex-row lg:flex-wrap 2xl:flex-nowrap overflow-hidden">
+        <div className="w-full flex flex-col  items-center gap-2 md:flex-row md:flex-wrap 2xl:flex-nowrap overflow-hidden ">
           {nrOfCards.map((card) => (
             <Card
               key={card}
@@ -31,6 +33,7 @@ export const CardSection = ({
           ))}
         </div>
       </div>
+      {/* </div> */}
     </section>
   );
 };
