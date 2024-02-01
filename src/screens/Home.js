@@ -21,12 +21,71 @@ import StartYourProject from "../components/StartYourProject";
 import { CardSection } from "../components/CardSection";
 import { FullCover } from "../components/FullCover";
 import WhoWeAre from "../components/WhoWeAre";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Home = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
+  const [projects] = useState([
+    {
+      id: "folie-marine",
+      title: "Folie Marine",
+      imageSrc: seaTable,
+      url: "/projects",
+    },
+    {
+      id: "tribe",
+      title: "Tribe",
+      imageSrc: food,
+      url: "/projects/tribe",
+    },
+    {
+      id: "millenium-garden",
+      title: "Millennium Garden & Lounge",
+      imageSrc: table,
+      url: "/projects/millenium-garden",
+    },
+  ]);
+
+  const [projects2] = useState([
+    {
+      id: "KSAMIL",
+      title: "KSAMIL",
+      imageSrc: ksamil,
+    },
+    {
+      id: "FOLIE VILLAGE",
+      title: "FOLIE VILLAGE",
+      imageSrc: folieVillage,
+    },
+    {
+      id: "BORSH",
+      title: "BORSH",
+      imageSrc: borsh,
+    },
+  ]);
+
+  // const projects = [
+  //   {
+  //     id: "folie-marine",
+  //     title: "Folie Marine",
+  //     imageSrc: seaTable,
+  //   },
+  //   {
+  //     id: "tribe",
+  //     title: "Tribe",
+  //     imageSrc: food,
+  //   },
+  //   {
+  //     id: "millenium-garden",
+  //     title: "Millennium Garden & Lounge",
+  //     imageSrc: table,
+  //   },
+  // ];
+
   return (
     <div id="firstScreen">
+      <ScrollToTop></ScrollToTop>
       {isVideoPlaying && (
         <div className=" fixed right-0 left-0 top-0 bottom-0 z-30">
           <div className="min-h-screen w-full bg-black bg-opacity-40 flex justify-center items-center relative">
@@ -80,9 +139,10 @@ const Home = () => {
         sectionText={
           "At Millennium, our passion for architectural innovation and construction excellence drives us to create spaces that inspire and endure. Our latest projects witness the convergence of art and construction. We continue to shape the future with our commitment to quality, sustainability, and visionary design"
         }
-        nrOfCards={[0, 1, 2]}
-        imageSrc={[seaTable, food, table]}
-        title={["Folie Marine", "Tribe", "Millennium Garden & Lounge"]}
+        // nrOfCards={[0, 1, 2]}
+        // imageSrc={[seaTable, food, table]}
+        // title={["Folie Marine", "Tribe", "Millennium Garden & Lounge"]}
+        data={projects}
       ></CardSection>
 
       <section
@@ -168,9 +228,10 @@ const Home = () => {
         sectionText={
           "Envisioning a world where architecture and construction seamlessly blend with the environment, we strive to be pioneers in sustainable and visionary design. Our vision is to leave a lasting impact on the communities we serve, shaping spaces that stand the test of time."
         }
-        nrOfCards={[0, 1, 2]}
-        imageSrc={[ksamil, folieVillage, borsh]}
-        title={["KSAMIL", "FOLIE VILLAGE", "BORSH"]}
+        // nrOfCards={[0, 1, 2]}
+        // imageSrc={[ksamil, folieVillage, borsh]}
+        // title={["KSAMIL", "FOLIE VILLAGE", "BORSH"]}
+        data={projects2}
       ></CardSection>
 
       <section className="bg-[#151515] px-[20px] xl:px-0">

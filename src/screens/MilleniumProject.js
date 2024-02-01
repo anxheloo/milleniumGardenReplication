@@ -1,28 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import seaTable from "../assets/Group-51@2x-6-1024x576.jpg";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import fm1 from "../assets/fm1.jpg";
-import fm2 from "../assets/fm2.jpg";
-import fm3 from "../assets/fm3.jpg";
-import fm4 from "../assets/fm4.jpg";
-import fm5 from "../assets/fm5.jpg";
-import fm6 from "../assets/fm6.jpg";
-import folieMarineLoge from "../assets/Folie Marine Logo.png";
+import m1 from "../assets/millenium1.jpg";
+import m2 from "../assets/millenium2.jpg";
+import m3 from "../assets/millenium3.jpg";
+import m4 from "../assets/millenium4.jpg";
+import m5 from "../assets/millenium5.jpg";
+import m6 from "../assets/millenium6.jpg";
+import milleniumLogo from "../assets/MilleniumGarderLogo.png";
 import food from "../assets/Group-51@2x-7-1024x576.jpg";
 import table from "../assets/Group-51@2x-8-1024x576.jpg";
 import sushiBar from "../assets/OpiumSushiBar.jpg";
 import "../App.css";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPlay,
-  faXmark,
-  faArrowRight,
-} from "@fortawesome/free-solid-svg-icons";
 import ScrollToTop from "../components/ScrollToTop";
 
-export const Projects = () => {
+const MilleniumProject = () => {
+  const [images, setImages] = useState([m1, m2, m3, m4, m5, m6]);
+
   return (
     <div id="projects">
       <ScrollToTop></ScrollToTop>
@@ -30,7 +26,7 @@ export const Projects = () => {
         id=""
         className="flex flex-col  min-h-screen   bg-no-repeat bg-cover relative"
         style={{
-          backgroundImage: `url(${seaTable})`,
+          backgroundImage: `url(${table})`,
           backgroundAttachment: "fixed",
         }}
       >
@@ -41,67 +37,67 @@ export const Projects = () => {
 
       <div className="w-full p-[20px] lg:w-1/2 m-auto space-y-10 mt-28 mb-10">
         <div className="flex justify-between items-center">
-          <img src={folieMarineLoge} width={"200px"}></img>
+          <img src={milleniumLogo} width={"200px"}></img>
           <div>
             <div className="text-gray-400 text-[14px]">MORE INFO ↗</div>
             <div className="text-[15px]">
-              <a href="#">foliemarine.com</a>
+              <a href="#">instagram.com/millennium.garden</a>
             </div>
           </div>
         </div>
         <div className="text-[17px]">
-          Folie Marine Beach Hotel & Club lies in the center of nature with
-          breathtaking views and crystal lear blue water! It is the vacation
-          destination of your dreams: it is an oasis of fun, relaxation
-          adventures and alternatives for everyone!
+          Where nature nurtures connection in the heart of Tirana. A taste of
+          History in every bite, a sip of Nature in every sip. Millennium Garden
+          is the place where each moment is seasoned with the flavors of the
+          past and the freshness of today.
         </div>
       </div>
 
       <section className=" py-10 sm:py-14 md:py-16 lg:py-20 xl:py-28 px-[10px] ">
         <div className="lg:px-[10px] w-full  flex justify-center flex-wrap lg:w-3/4 xl:w-4/5  gap-1 m-auto ">
-          <div className="w-[48%] lg:w-[33%] h-[48%] lg:h-[33%]">
+          <div className="w-[48%] lg:w-[33%] h-[48%] lg:h-[33%] cursor-pointer">
             <img
-              src={fm1}
+              src={images[0]}
               className="w-full h-full object-cover"
               alt="img"
             ></img>
           </div>
 
-          <div className="w-[48%] lg:w-[33%] h-[48%] lg:h-[33%]">
+          <div className="w-[48%] lg:w-[33%] h-[48%] lg:h-[33%] cursor-pointer">
             <img
-              src={fm2}
+              src={images[1]}
               className="w-full h-full object-cover"
               alt="img"
             ></img>
           </div>
 
-          <div className="w-[48%] lg:w-[33%] h-[48%] lg:h-[33%]">
+          <div className="w-[48%] lg:w-[33%] h-[48%] lg:h-[33%] cursor-pointer">
             <img
-              src={fm3}
+              src={images[2]}
               className="w-full h-full object-cover"
               alt="img"
             ></img>
           </div>
 
-          <div className="w-[48%] lg:w-[33%] h-[48%] lg:h-[33%]">
+          <div className="w-[48%] lg:w-[33%] h-[48%] lg:h-[33%] cursor-pointer">
             <img
-              src={fm4}
+              src={images[3]}
               className="w-full h-full object-cover"
               alt="img"
             ></img>
           </div>
 
-          <div className="w-[48%] lg:w-[33%] h-[48%] lg:h-[33%]">
+          <div className="w-[48%] lg:w-[33%] h-[48%] lg:h-[33%] cursor-pointer">
             <img
-              src={fm5}
+              src={images[4]}
               className="w-full h-full object-cover"
               alt="img"
             ></img>
           </div>
 
-          <div className="w-[48%] lg:w-[33%] h-[48%] lg:h-[33%]">
+          <div className="w-[48%] lg:w-[33%] h-[48%] lg:h-[33%] cursor-pointer">
             <img
-              src={fm6}
+              src={images[5]}
               className="w-full h-full object-cover"
               alt="img"
             ></img>
@@ -188,3 +184,5 @@ export const Projects = () => {
     </div>
   );
 };
+
+export default MilleniumProject;

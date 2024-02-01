@@ -24,10 +24,12 @@ import building15 from "../assets/building15.jpg";
 import building16 from "../assets/building16.jpg";
 import building17 from "../assets/building17.jpg";
 import building18 from "../assets/building18.jpg";
+import ScrollToTop from "../components/ScrollToTop";
 
 const RealEstate = () => {
   return (
     <div id="real-estate ">
+      <ScrollToTop></ScrollToTop>
       <section
         className="flex flex-col h-[60vh] bg-white  bg-no-repeat bg-cover relative "
         style={{
@@ -245,7 +247,9 @@ const RealEstate = () => {
         </div>
       </section>
 
-      <Subscribe></Subscribe>
+      <div className="px-10 md:px-36">
+        <Subscribe></Subscribe>
+      </div>
 
       <Footer></Footer>
     </div>

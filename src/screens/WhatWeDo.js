@@ -8,10 +8,12 @@ import { WhatWeDoComponent2 } from "../components/WhatWeDoComponent2";
 import Footer from "../components/Footer";
 import { Carousel } from "../components/Carousel";
 import { WhatWeDoComponent3 } from "../components/WhatWeDoComponent3";
+import ScrollToTop from "../components/ScrollToTop";
 
 const WhatWeDo = () => {
   return (
     <div className="whatWeDoScreen">
+      <ScrollToTop></ScrollToTop>
       <header
         id=""
         className="flex flex-col  min-h-screen   bg-no-repeat bg-cover relative"

@@ -2,13 +2,14 @@ import React from "react";
 import seaTable from "../assets/Group-51@2x-6-1024x576.jpg";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import fm1 from "../assets/fm1.jpg";
-import fm2 from "../assets/fm2.jpg";
-import fm3 from "../assets/fm3.jpg";
-import fm4 from "../assets/fm4.jpg";
-import fm5 from "../assets/fm5.jpg";
-import fm6 from "../assets/fm6.jpg";
+import t1 from "../assets/tribeImg1.jpg";
+import t2 from "../assets/tribeImg2.jpg";
+import t3 from "../assets/tribeImg3.jpg";
+import t4 from "../assets/tribeImg4.jpg";
+import t5 from "../assets/tribeImg5.jpg";
+import t6 from "../assets/tribeImg6.jpg";
 import folieMarineLoge from "../assets/Folie Marine Logo.png";
+import tribeLogo from "../assets/tribeLogo.png";
 import food from "../assets/Group-51@2x-7-1024x576.jpg";
 import table from "../assets/Group-51@2x-8-1024x576.jpg";
 import sushiBar from "../assets/OpiumSushiBar.jpg";
@@ -22,7 +23,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ScrollToTop from "../components/ScrollToTop";
 
-export const Projects = () => {
+const TribeProject = () => {
   return (
     <div id="projects">
       <ScrollToTop></ScrollToTop>
@@ -30,7 +31,7 @@ export const Projects = () => {
         id=""
         className="flex flex-col  min-h-screen   bg-no-repeat bg-cover relative"
         style={{
-          backgroundImage: `url(${seaTable})`,
+          backgroundImage: `url(${food})`,
           backgroundAttachment: "fixed",
         }}
       >
@@ -41,19 +42,25 @@ export const Projects = () => {
 
       <div className="w-full p-[20px] lg:w-1/2 m-auto space-y-10 mt-28 mb-10">
         <div className="flex justify-between items-center">
-          <img src={folieMarineLoge} width={"200px"}></img>
+          <img src={tribeLogo} width={"200px"}></img>
           <div>
             <div className="text-gray-400 text-[14px]">MORE INFO ↗</div>
             <div className="text-[15px]">
-              <a href="#">foliemarine.com</a>
+              <a href="#">triberestaurant.al</a>
             </div>
           </div>
         </div>
         <div className="text-[17px]">
-          Folie Marine Beach Hotel & Club lies in the center of nature with
-          breathtaking views and crystal lear blue water! It is the vacation
-          destination of your dreams: it is an oasis of fun, relaxation
-          adventures and alternatives for everyone!
+          Always fresh products, always attentive staff, always friendly
+          reception. From the union of these three elements, that represent our
+          core, Tribe was born, an innovative gastronomic project that gives
+          life to real culinary suggestions. Tribe has a studied design to give
+          you an unforgettable gastronomic experience: you could stay here every
+          day to enjoy delicious specialties of meat, fish, vegetarian dishes,
+          handcrafted cakes that contain true goodness. Its central location,
+          close to the main truistical attractions of the capital, makes it the
+          ideal spot to stop for lunch, dinner and also just to relax before
+          heading on to explore the city.
         </div>
       </div>
 
@@ -61,7 +68,7 @@ export const Projects = () => {
         <div className="lg:px-[10px] w-full  flex justify-center flex-wrap lg:w-3/4 xl:w-4/5  gap-1 m-auto ">
           <div className="w-[48%] lg:w-[33%] h-[48%] lg:h-[33%]">
             <img
-              src={fm1}
+              src={t1}
               className="w-full h-full object-cover"
               alt="img"
             ></img>
@@ -69,7 +76,7 @@ export const Projects = () => {
 
           <div className="w-[48%] lg:w-[33%] h-[48%] lg:h-[33%]">
             <img
-              src={fm2}
+              src={t2}
               className="w-full h-full object-cover"
               alt="img"
             ></img>
@@ -77,7 +84,7 @@ export const Projects = () => {
 
           <div className="w-[48%] lg:w-[33%] h-[48%] lg:h-[33%]">
             <img
-              src={fm3}
+              src={t3}
               className="w-full h-full object-cover"
               alt="img"
             ></img>
@@ -85,7 +92,7 @@ export const Projects = () => {
 
           <div className="w-[48%] lg:w-[33%] h-[48%] lg:h-[33%]">
             <img
-              src={fm4}
+              src={t4}
               className="w-full h-full object-cover"
               alt="img"
             ></img>
@@ -93,7 +100,7 @@ export const Projects = () => {
 
           <div className="w-[48%] lg:w-[33%] h-[48%] lg:h-[33%]">
             <img
-              src={fm5}
+              src={t5}
               className="w-full h-full object-cover"
               alt="img"
             ></img>
@@ -101,7 +108,7 @@ export const Projects = () => {
 
           <div className="w-[48%] lg:w-[33%] h-[48%] lg:h-[33%]">
             <img
-              src={fm6}
+              src={t6}
               className="w-full h-full object-cover"
               alt="img"
             ></img>
@@ -188,3 +195,5 @@ export const Projects = () => {
     </div>
   );
 };
+
+export default TribeProject;

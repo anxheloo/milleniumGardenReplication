@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import logo from "../assets/Group-8-1.svg";
 import igLogo from "../assets/instagram.svg";
 
@@ -8,19 +8,21 @@ const Footer = () => {
     <footer className="bg-[#151515] text-white">
       <div className="flex flex-col gap-10 p-10  md:flex-row md:justify-between md:items-start md:p-14 xl:p-24">
         <div className="flex-1">
-          <img src={logo} className="w-[180px] xl:[250px]"></img>
+          <Link to={"/"}>
+            <img src={logo} className="w-[180px] xl:[250px]"></img>
+          </Link>
         </div>
 
         <div className="hidden  md:flex gap-10 lg:gap-32 flex-2 xl:text-[20px] ">
           <div className="flex flex-col gap-4">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">What we do</a>
+            <Link to={"/"}>Home</Link>
+            <Link to={"/about-us"}>About</Link>
+            <Link to={"/what-we-do"}>What we do</Link>
           </div>
           <div className="flex flex-col gap-4">
-            <a href="#">Projects</a>
-            <a href="#">Coming Soon</a>
-            <a href="#">Contact</a>
+            <Link to={"/real-estate"}>Projects</Link>
+            <Link to={"/comming-soon"}>Coming Soon</Link>
+            <Link to={"/contact-us"}>Contact</Link>
           </div>
         </div>
 

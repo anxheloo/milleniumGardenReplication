@@ -7,7 +7,10 @@ export const CardSection = ({
   title,
   sectionTitle,
   sectionText,
+  data,
 }) => {
+  console.log("This is data:", data);
+
   return (
     <section className="bg-white p-[20px] flex flex-col justify-center items-center   xl:justify-end xl:items-end  lg:min-h-screen xl:p-[10px] ">
       {/* <div className="bg-black"> */}
@@ -23,14 +26,23 @@ export const CardSection = ({
         </div>
 
         <div className="w-full flex flex-col  items-center gap-2 md:flex-row md:flex-wrap 2xl:flex-nowrap overflow-hidden ">
-          {nrOfCards.map((card) => (
+          {data?.map((item) => (
+            <Card
+              key={item.id}
+              imageSrc={item.imageSrc}
+              title={item.title}
+              url={item.url}
+            ></Card>
+          ))}
+
+          {/* {nrOfCards.map((card) => (
             <Card
               key={card}
               imageSrc={imageSrc[card]}
               title={title[card]}
               url={""}
             ></Card>
-          ))}
+          ))} */}
         </div>
       </div>
       {/* </div> */}

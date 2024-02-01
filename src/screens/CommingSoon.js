@@ -8,10 +8,12 @@ import borsh from "../assets/borsh@2x-1-910x1024.jpg";
 import poro from "../assets/poro.jpg";
 import Subscribe from "../components/Subscribe";
 import Card from "../components/Card";
+import ScrollToTop from "../components/ScrollToTop";
 
 const CommingSoon = () => {
   return (
     <div id="comming-soon">
+      <ScrollToTop></ScrollToTop>
       <header
         id=""
         className="flex flex-col  min-h-screen   bg-no-repeat bg-cover relative"
@@ -54,7 +56,10 @@ const CommingSoon = () => {
         bgColor={"#FFFFFF"}
         textColor={"#000000"}
       ></StartYourProject>
-      <Subscribe></Subscribe>
+
+      <div className="px-10 md:px-36 ">
+        <Subscribe></Subscribe>
+      </div>
       <Footer></Footer>
     </div>
   );

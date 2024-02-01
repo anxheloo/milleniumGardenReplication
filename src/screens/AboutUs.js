@@ -24,10 +24,12 @@ import { WhatWeDoComponent } from "../components/WhatWeDoComponent";
 import { Form } from "../components/Form";
 import { Carousel } from "../components/Carousel";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 export const AboutUs = () => {
   return (
     <div id="aboutUsScreen">
+      <ScrollToTop></ScrollToTop>
       <header
         id=""
         className="flex flex-col  min-h-screen   bg-no-repeat bg-cover relative"

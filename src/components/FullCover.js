@@ -10,11 +10,13 @@ export const FullCover = () => {
       <FullCoverItem
         componentImg={component1Img}
         text={"Hospitality"}
+        link={"/hospitality"}
       ></FullCoverItem>
 
       <FullCoverItem
         componentImg={component2Img}
         text={"Entertainment"}
+        link={"/entertainment"}
       ></FullCoverItem>
     </section>
   );

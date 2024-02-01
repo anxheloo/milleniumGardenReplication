@@ -12,10 +12,12 @@ import jaliHotel from "../assets/JaliHotel.jpg";
 import vipHotel from "../assets/JaliVipHotel.jpg";
 import Subscribe from "../components/Subscribe";
 import Card from "../components/Card";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Hospitality = () => {
   return (
     <div id="hospitality">
+      <ScrollToTop></ScrollToTop>
       <header
         id=""
         className="flex flex-col  min-h-screen   bg-no-repeat bg-cover relative"

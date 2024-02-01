@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-export const FullCoverItem = ({ componentImg, text }) => {
+export const FullCoverItem = ({ componentImg, text, link }) => {
   return (
     <div
       style={{ backgroundImage: `url(${componentImg})` }}
@@ -10,14 +11,14 @@ export const FullCoverItem = ({ componentImg, text }) => {
     >
       <div className="hidden w-1/2 group-hover:flex justify-between items-center px-7">
         <h2 className="text-white text-[40px]">{text}</h2>
-        <a href="#">
+        <Link to={link}>
           <button>
             <FontAwesomeIcon
               icon={faArrowRight}
               className="w-[30px] h-[30px] text-white -rotate-45 cursor-pointer"
             ></FontAwesomeIcon>
           </button>
-        </a>
+        </Link>
       </div>
     </div>
   );

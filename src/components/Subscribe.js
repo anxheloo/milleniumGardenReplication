@@ -6,7 +6,7 @@ const Subscribe = () => {
   return (
     <section
       id="subscribe"
-      className="h-[350px] lg:h-[400px] flex flex-col justify-around md:items-center  xl:flex-row xl:justify-between  "
+      className="h-[250px] md:h-[350px] lg:h-[400px] flex flex-col justify-around md:items-center  xl:flex-row xl:justify-between  "
     >
       <div className="space-y-3   ">
         <h1 className="text-red-600 text-[16px] font-[500] md:text-[20px]">

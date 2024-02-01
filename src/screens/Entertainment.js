@@ -11,10 +11,13 @@ import MilleniumCinema from "../assets/MilleniumCinema.jpg";
 import Medispa from "../assets/Medispa.jpg";
 import Subscribe from "../components/Subscribe";
 import Card from "../components/Card";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Entertainment = () => {
   return (
     <div id="entertainment">
+      <ScrollToTop></ScrollToTop>
+
       <header
         id=""
         className="flex flex-col  min-h-screen   bg-no-repeat bg-cover relative"
@@ -69,7 +72,10 @@ const Entertainment = () => {
         bgColor={"#FFFFFF"}
         textColor={"#000000"}
       ></StartYourProject>
-      <Subscribe></Subscribe>
+
+      <div className="px-10 md:px-36">
+        <Subscribe></Subscribe>
+      </div>
       <Footer></Footer>
     </div>
   );

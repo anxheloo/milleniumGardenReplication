@@ -11,10 +11,12 @@ import {
   faLocationDot,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+import ScrollToTop from "../components/ScrollToTop";
 
 export const ContactUs = () => {
   return (
     <div id="contact-us" className="bg-theme">
+      <ScrollToTop></ScrollToTop>
       <Header></Header>
 
       <div

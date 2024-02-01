@@ -18,7 +18,7 @@ function App() {
   // return <CommingSoon></CommingSoon>;
   // return <RealEstate></RealEstate>;
   // return <ContactUs></ContactUs>;
-  return <Projects></Projects>;
+  // return <Projects></Projects>;
 }
 
 export default App;

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -19,7 +20,7 @@ const StartYourProject = ({ bgColor, textColor }) => {
         Start your project
       </h1>
 
-      <a href="#">
+      <Link to={"/contact-us"}>
         <button>
           <FontAwesomeIcon
             icon={faArrowRight}
@@ -27,7 +28,7 @@ const StartYourProject = ({ bgColor, textColor }) => {
             style={{ color: textColor }}
           ></FontAwesomeIcon>
         </button>
-      </a>
+      </Link>
     </div>
   );
 };
