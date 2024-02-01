@@ -9,6 +9,9 @@ import fm4 from "../assets/fm4.jpg";
 import fm5 from "../assets/fm5.jpg";
 import fm6 from "../assets/fm6.jpg";
 import folieMarineLoge from "../assets/Folie Marine Logo.png";
+import food from "../assets/Group-51@2x-7-1024x576.jpg";
+import table from "../assets/Group-51@2x-8-1024x576.jpg";
+import sushiBar from "../assets/OpiumSushiBar.jpg";
 import "../App.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -105,10 +108,12 @@ export const Projects = () => {
       </section>
 
       <section
-        className="min-h-screen  relative "
+        className="min-h-[80vh] "
+        // relative
         // flex flex-col justify-center items-center md:flex-row md:flex-wrap gap-10 md:justify-center md:items-center
         style={{
           backgroundImage: `url(${seaTable})`,
+          backgroundAttachment: "fixed",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -116,9 +121,12 @@ export const Projects = () => {
         }}
       >
         {/* <div className=" absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm "></div> */}
+        {/* absolute inset-0  */}
+        {/* w-full h-full */}
+        {/* absolute top-0 left-0 */}
 
-        <div className=" absolute inset-0  bg-black bg-opacity-60 backdrop-blur-sm h-full flex flex-col justify-center items-center md:flex-row md:flex-wrap gap-10 md:justify-center md:items-center md:h-full ">
-          <div className="space-y-4 w-[60%] sm:w-[45%] h-[200px] lg:w-[260px] lg:h-[400px] ">
+        <div className=" w-full min-h-[80vh] py-10 pb-20 bg-black bg-opacity-40 flex flex-col  justify-center items-center space-y-10 md:flex-row md:flex-wrap gap-14 md:justify-center  md:items-center ">
+          <div className="space-y-4 w-[65%] sm:w-[45%] h-[270px] lg:w-[260px] xl:h-[400px] ">
             <div
               className="  w-full h-full rounded-t-[200px] cursor-pointer"
               // w-1/2 h-[200px] lg:w-[260px] lg:h-[400px]
@@ -131,43 +139,45 @@ export const Projects = () => {
             <div className="text-white text-[20px]">Folie Marine</div>
           </div>
 
-          <div className="space-y-4 w-[60%] sm:w-[45%]  h-[200px] lg:w-[260px] lg:h-[400px]">
+          <div className="space-y-4 w-[65%] sm:w-[45%] h-[270px] lg:w-[260px] xl:h-[400px]">
             <div
               className="  w-full h-full rounded-t-[200px] cursor-pointer"
               // w-1/2 h-[200px] lg:w-[260px] lg:h-[400px]
               style={{
-                backgroundImage: `url(${seaTable})`,
+                backgroundImage: `url(${food})`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
               }}
             ></div>
-            <div className="text-white text-[20px]">Folie Marine</div>
+            <div className="text-white text-[20px]">Tribe</div>
           </div>
 
-          <div className="space-y-4 w-[60%] sm:w-[45%]  h-[200px] lg:w-[260px] lg:h-[400px]">
+          <div className="space-y-4 w-[65%] sm:w-[45%]  h-[270px] lg:w-[260px] xl:h-[400px]">
             <div
               className="  w-full h-full rounded-t-[200px] cursor-pointer"
               // w-1/2 h-[200px] lg:w-[260px] lg:h-[400px]
               style={{
-                backgroundImage: `url(${seaTable})`,
+                backgroundImage: `url(${table})`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
               }}
             ></div>
-            <div className="text-white text-[20px]">Folie Marine</div>
+            <div className="text-white text-[20px]">
+              Millennium Garden & Lounge
+            </div>
           </div>
 
-          <div className="space-y-4 w-[60%] sm:w-[45%]  h-[200px] lg:w-[260px] lg:h-[400px]">
+          <div className="space-y-4 w-[65%] sm:w-[45%]  h-[270px] lg:w-[260px] xl:h-[400px] ">
             <div
               className="  w-full h-full rounded-t-[200px] cursor-pointer"
               // w-1/2 h-[200px] lg:w-[260px] lg:h-[400px]
               style={{
-                backgroundImage: `url(${seaTable})`,
+                backgroundImage: `url(${sushiBar})`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
               }}
             ></div>
-            <div className="text-white text-[20px]">Folie Marine</div>
+            <div className="text-white text-[20px]">Opium Sushi bar</div>
           </div>
         </div>
       </section>
