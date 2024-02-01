@@ -22,6 +22,7 @@ import {
   faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 import ScrollToTop from "../components/ScrollToTop";
+import { useParams } from "react-router-dom";
 
 const TribeProject = () => {
   return (

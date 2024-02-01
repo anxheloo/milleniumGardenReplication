@@ -101,7 +101,7 @@ reportWebVitals();
 /*
 Steps for React Router Dom
 
-1-We install: npm install react-router-dom localforage match-sorter sort-by
+1-We install: npm install react-router-dom 
 2-we import in index.js file : import { createBrowserRouter, RouterProvider } from "react-router-dom";
 3-We create the list of our links: const router = createBrowserRouter([
   {
